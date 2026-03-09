@@ -18,7 +18,7 @@ spec:
         - name: do-registry
       containers:
         - name: frontend
-          image: notes-frontend:latest   # replace with your registry image
+          image: registry.digitalocean.com/YOUR_REGISTRY/notes-frontend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
