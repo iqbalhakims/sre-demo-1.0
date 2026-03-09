@@ -1,0 +1,14 @@
+do_token      = "dop_v1_xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+region        = "sgp1"
+cluster_name  = "sre-demo"
+k8s_version   = "1.32"
+node_size     = "s-2vcpu-4gb"
+node_count    = 2
+registry_name = "sre-demo-registry"
+db_user       = "notes"
+db_password   = "changeme123"
+db_name       = "notesdb"
+
+# After pushing images to DO registry:
+frontend_image = "registry.digitalocean.com/sre-demo-registry/notes-frontend:latest"
+backend_image  = "registry.digitalocean.com/sre-demo-registry/notes-backend:latest"
